@@ -1,14 +1,14 @@
 ## function
 # define main
 def main():
-    x = get_int()
+    x = get_int("What's x? ")
     print(f"x is {x}")
 
 # define get_int
-def get_int():
+def get_int(prompt):
     while True:
         try:
-            return int(input("What's x? "))
+            return int(input(prompt))
            # x = int(input("What's x? "))
         except ValueError:
             pass
@@ -20,7 +20,6 @@ def get_int():
     return x
         """
         
-
 # call main
 main()
 
